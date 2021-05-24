@@ -163,6 +163,7 @@ nav{
     .hero .hero-img{
         background-image: url(./assets/Images/homepage-img/hero-img-solar.png);
         width: 50%;
+        background-size: cover;
         
     }
 
@@ -177,6 +178,7 @@ nav{
         height: 500px;
         background-repeat: no-repeat;
         z-index: -1;
+        background-size: cover;
         
     }
 
@@ -351,7 +353,8 @@ nav{
 
     .product-descp{
         width: 500px;
-        padding-left: 100px;
+        /* padding-left: 100px; */
+        margin: auto;
     }
 
     .product-descp .pheader{
