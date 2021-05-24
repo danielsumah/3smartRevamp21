@@ -684,6 +684,7 @@ footer{
     max-width: 83vw;
     margin: auto;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* border: 1px solid #FF8019; */
     /* justify-content: space-around; */
@@ -717,6 +718,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: #333333;
     
 }
 
