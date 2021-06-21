@@ -38,7 +38,7 @@
     </script>
 
 </head>
-<body class="fmbody">
+<body>
     
         <!-- Navigation Bar Code  -->
     <nav>
@@ -49,8 +49,8 @@
         <ul class="menu">
             <a href="changeover.html"><li class="list-item">Change Overs</li></a>
             <a href="solar.html"><li class="list-item">Solar Installations</li></a>
-            <a href="about.html"><li class="list-item">About</li></a>
-            <a href="Contact.html"><li class="list-item">Contact</li></a>
+            <!-- <a href="about.html"><li class="list-item">About</li></a>
+            <a href="Contact.html"><li class="list-item">Contact</li></a> -->
         </ul>
     </nav>
      <!-- mobile nav -->
@@ -58,8 +58,8 @@
         <ul>
             <li><a href="changeover.html">ChangeOver</a></li>
             <li><a href="solar.html">Solar Installations</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li> -->
         </ul>
     </div>
     <!-- NavBar ends -->
@@ -67,101 +67,101 @@
     <!-- Body -->
 
     <div class="form-body">
-    <h3 class="info">Kindly input your information</h3>
+        <h3 class="info">Kindly input your information</h3>
 
-    <p class="info-p">After filling the form, you will be redirected to our Paystack Page
-        where you will make payment. A mail will be sent to you afterwards
-        confirming your payment
-    </p>
+        <p class="info-p">After filling the form, you will be redirected to our Paystack Page
+            where you will make payment. A mail will be sent to you afterwards
+            confirming your payment
+        </p>
+   
+        <form  method="POST" action="#">
+        <div class="form">
 
-    <form  method="POST" action="#">
-    <div class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 fname">
+                        <label for="fname">First Name</label><br>
+                        <input class="name" type="text" id="fname" name="firstname" placeholder="First name">
+                    </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 fname">
-                    <label for="fname">First Name</label><br>
-                    <input class="name" type="text" id="fname" name="firstname" placeholder="First name">
+                    <div class="col-sm-3 lname">
+                        <label for="lname">Last Name</label>
+            <input class="name" type="text" id="lname" name="lastname" placeholder="Last name"><br>
+                    </div>
                 </div>
 
-                <div class="col-sm-3 lname">
-                    <label for="lname">Last Name</label>
-        <input class="name" type="text" id="lname" name="lastname" placeholder="Last name"><br>
-                </div>
+            <div class="row">    
+            <div class="fbody">
+            <label for="email">Email Address</label><br>
+            <input id="email" type="email" name="email" placeholder="Email address" required><br>
+
+            <label for="num">Phone Number</label><br>
+            <input id="num" name="num" type="number"><br>
+
+            <label>Where are you buying our product from?*</label><br>
+    <select>
+        <option disabled selected>Select State</option>
+        <option value="Abia">Abia</option>
+        <option value="Adamawa">Adamawa</option>
+        <option value="Akwa Ibom">Akwa Ibom</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Bauchi">Bauchi</option>
+        <option value="Bayelsa">Bayelsa</option>
+        <option value="Benue">Benue</option>
+        <option value="Borno">Borno</option>
+        <option value="Cross Rive">Cross River</option>
+        <option value="Delta">Delta</option>
+        <option value="Ebonyi">Ebonyi</option>
+        <option value="Edo">Edo</option>
+        <option value="Ekiti">Ekiti</option>
+        <option value="Enugu">Enugu</option>
+        <option value="FCT">Federal Capital Territory</option>
+        <option value="Gombe">Gombe</option>
+        <option value="Imo">Imo</option>
+        <option value="Jigawa">Jigawa</option>
+        <option value="Kaduna">Kaduna</option>
+        <option value="Kano">Kano</option>
+        <option value="Katsina">Katsina</option>
+        <option value="Kebbi">Kebbi</option>
+        <option value="Kogi">Kogi</option>
+        <option value="Kwara">Kwara</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Nasarawa">Nasarawa</option>
+        <option value="Niger">Niger</option>
+        <option value="Ogun">Ogun</option>
+        <option value="Ondo">Ondo</option>
+        <option value="Osun">Osun</option>
+        <option value="Oyo">Oyo</option>
+        <option value="Plateau">Plateau</option>
+        <option value="Rivers">Rivers</option>
+        <option value="Sokoto">Sokoto</option>
+        <option value="Taraba">Taraba</option>
+        <option value="Yobe">Yobe</option>
+        <option value="Zamfara">Zamfara</option>
+    </select>
+    <br>
+            <label for="place">Where will you be using our product?*</label><br>
+            <input id="place" name="place" type="text" required><br>
+
+            <label id="how">How did you hear about us?</label><br>
+            <input id="how" name="how" type="text"><br>
+
+            <div class="chckb">
+                <input type="checkbox" id="checkbox"> <label>By submitting this, you agree to our Terms and Conditions</label>
             </div>
 
-        <div class="row">    
-        <div class="fbody">
-        <label for="email">Email Address</label><br>
-        <input id="email" type="email" name="email" placeholder="Email address" required><br>
-
-        <label for="num">Phone Number</label><br>
-        <input id="num" name="num" type="number"><br>
-
-        <label>Where are you buying our product from?*</label><br>
-  <select>
-    <option disabled selected>Select State</option>
-    <option value="Abia">Abia</option>
-    <option value="Adamawa">Adamawa</option>
-    <option value="Akwa Ibom">Akwa Ibom</option>
-    <option value="Anambra">Anambra</option>
-    <option value="Bauchi">Bauchi</option>
-    <option value="Bayelsa">Bayelsa</option>
-    <option value="Benue">Benue</option>
-    <option value="Borno">Borno</option>
-    <option value="Cross Rive">Cross River</option>
-    <option value="Delta">Delta</option>
-    <option value="Ebonyi">Ebonyi</option>
-    <option value="Edo">Edo</option>
-    <option value="Ekiti">Ekiti</option>
-    <option value="Enugu">Enugu</option>
-    <option value="FCT">Federal Capital Territory</option>
-    <option value="Gombe">Gombe</option>
-    <option value="Imo">Imo</option>
-    <option value="Jigawa">Jigawa</option>
-    <option value="Kaduna">Kaduna</option>
-    <option value="Kano">Kano</option>
-    <option value="Katsina">Katsina</option>
-    <option value="Kebbi">Kebbi</option>
-    <option value="Kogi">Kogi</option>
-    <option value="Kwara">Kwara</option>
-    <option value="Lagos">Lagos</option>
-    <option value="Nasarawa">Nasarawa</option>
-    <option value="Niger">Niger</option>
-    <option value="Ogun">Ogun</option>
-    <option value="Ondo">Ondo</option>
-    <option value="Osun">Osun</option>
-    <option value="Oyo">Oyo</option>
-    <option value="Plateau">Plateau</option>
-    <option value="Rivers">Rivers</option>
-    <option value="Sokoto">Sokoto</option>
-    <option value="Taraba">Taraba</option>
-    <option value="Yobe">Yobe</option>
-    <option value="Zamfara">Zamfara</option>
-</select>
-<br>
-        <label for="place">Where will you be using our product?*</label><br>
-        <input id="place" name="place" type="text" required><br>
-
-        <label id="how">How did you hear about us?</label><br>
-        <input id="how" name="how" type="text"><br>
-
-        <div class="chckb">
-            <input type="checkbox" id="checkbox"> <label>By submitting this, you agree to our Terms and Conditions</label>
+            <input type="submit" id="submit" value="Go to PayPal">
         </div>
-
-        <input type="submit" id="submit" value="Go to PayPal">
     </div>
-</div>
 
+        </div>
+        </div>
+        
+
+        </form>
     </div>
-    </div>
-    
 
-</form>
-<!-- Body ends -->
-
-<!-- Footer begins -->
+    <!-- Footer begins -->
     <footer class="footer">
         <div class="footer-1">
         <img src="./assets/Images/nav-footer-img/footer-logo.png" alt="3Smart Technology Logo">
@@ -197,6 +197,6 @@
         </div>
         
     </footer>
-
 </body>
+<!-- Body ends -->
 </html>
