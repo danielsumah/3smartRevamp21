@@ -37,6 +37,14 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
+
+<!-- jquery -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+        </script>
+
 </head>
 <body>
     
@@ -67,95 +75,99 @@
     <!-- Body -->
 
     <div class="form-body">
-        <h3 class="info">Kindly input your information</h3>
+        <h3 class="info">Please, we would love to know you</h3>
 
-        <p class="info-p">After filling the form, you will be redirected to our Paystack Page
-            where you will make payment. A mail will be sent to you afterwards
-            confirming your payment
+        <p class="info-p">You will be redirected to Jumia after filling this form
         </p>
    
-        <form  method="POST" action="#">
-        <div class="form">
+        <form id="myForm" name="google-sheet">
+            <div class="form">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 fname">
-                        <label for="fname">First Name</label><br>
-                        <input class="name" type="text" id="fname" name="firstname" placeholder="First name">
-                    </div>
+                <div class="container">
+                    <!-- <div class="row">
+                        <div class="col-sm-3 fname">
+                            <label for="fname">Name</label><br>
+                            <input class="name" type="text" id="fname" name="firstname" placeholder="First name">
+                        </div>
 
-                    <div class="col-sm-3 lname">
-                        <label for="lname">Last Name</label>
-            <input class="name" type="text" id="lname" name="lastname" placeholder="Last name"><br>
-                    </div>
-                </div>
+                        <div class="col-sm-3 lname">
+                            <label for="lname">Last Name</label>
+                            <input class="name" type="text" id="lname" name="lastname" placeholder="Last name"><br>
+                        </div>
+                    </div> -->
 
-            <div class="row">    
-            <div class="fbody">
-            <label for="email">Email Address</label><br>
-            <input id="email" type="email" name="email" placeholder="Email address" required><br>
+                <div class="row">    
+                <div class="fbody">
+                <label for="name">Name</label><br>
+                <input id="name" type="text" name="name" placeholder="Name" required><br>
 
-            <label for="num">Phone Number</label><br>
-            <input id="num" name="num" type="number"><br>
+                <label for="email">Email Address</label><br>
+                <input id="email" type="email" name="email" placeholder="Email address" required><br>
 
-            <label>Where are you buying our product from?*</label><br>
-    <select>
-        <option disabled selected>Select State</option>
-        <option value="Abia">Abia</option>
-        <option value="Adamawa">Adamawa</option>
-        <option value="Akwa Ibom">Akwa Ibom</option>
-        <option value="Anambra">Anambra</option>
-        <option value="Bauchi">Bauchi</option>
-        <option value="Bayelsa">Bayelsa</option>
-        <option value="Benue">Benue</option>
-        <option value="Borno">Borno</option>
-        <option value="Cross Rive">Cross River</option>
-        <option value="Delta">Delta</option>
-        <option value="Ebonyi">Ebonyi</option>
-        <option value="Edo">Edo</option>
-        <option value="Ekiti">Ekiti</option>
-        <option value="Enugu">Enugu</option>
-        <option value="FCT">Federal Capital Territory</option>
-        <option value="Gombe">Gombe</option>
-        <option value="Imo">Imo</option>
-        <option value="Jigawa">Jigawa</option>
-        <option value="Kaduna">Kaduna</option>
-        <option value="Kano">Kano</option>
-        <option value="Katsina">Katsina</option>
-        <option value="Kebbi">Kebbi</option>
-        <option value="Kogi">Kogi</option>
-        <option value="Kwara">Kwara</option>
-        <option value="Lagos">Lagos</option>
-        <option value="Nasarawa">Nasarawa</option>
-        <option value="Niger">Niger</option>
-        <option value="Ogun">Ogun</option>
-        <option value="Ondo">Ondo</option>
-        <option value="Osun">Osun</option>
-        <option value="Oyo">Oyo</option>
-        <option value="Plateau">Plateau</option>
-        <option value="Rivers">Rivers</option>
-        <option value="Sokoto">Sokoto</option>
-        <option value="Taraba">Taraba</option>
-        <option value="Yobe">Yobe</option>
-        <option value="Zamfara">Zamfara</option>
-    </select>
-    <br>
-            <label for="place">Where will you be using our product?*</label><br>
-            <input id="place" name="place" type="text" required><br>
+                <label for="number">Phone Number</label><br>
+                <input id="number" name="number" type="text" placeholder="080XXXXXXXX" required><br>
 
-            <label id="how">How did you hear about us?</label><br>
-            <input id="how" name="how" type="text"><br>
+                <label for="number">Location</label><br>
+                <input id="state" name="state" type="state" placeholder="E.g Lagos" required><br>
 
-            <div class="chckb">
-                <input type="checkbox" id="checkbox"> <label>By submitting this, you agree to our Terms and Conditions</label>
+                <!-- <label id="state" for="state">Where are you buying our product from?*</label><br>
+                    <select name="state" id="state">
+                        <option disabled selected>Select State</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross Rive">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="FCT">Federal Capital Territory</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                    </select>
+                <br> -->
+                <!-- <label for="place">Where will you be using our product?*</label><br>
+                <input id="place" name="place" type="text" required><br> -->
+
+                <label for="how">How did you hear about us?</label><br>
+                <input id="how" name="how" type="text"><br>
+
+                <!-- <div class="chckb">
+                    <input type="checkbox" id="checkbox"> <label>By submitting this, you agree to our Terms and Conditions</label>
+                </div> -->
+
+                <button name="submit" type="submit" id="submit">Go to Jumia</button>
             </div>
+        </div>
 
-            <input type="submit" id="submit" value="Go to PayPal">
-        </div>
-    </div>
-
-        </div>
-        </div>
+            </div>
+            </div>
         
 
         </form>
@@ -197,6 +209,26 @@
         </div>
         
     </footer>
+
+
+    <!-- javascript to post form response to google sheet -->
+    <script type="text/javascript">
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxY75XBCCYNBh-sYN2gyNO7s6rsDOusGYUKV8xYk0W7VMpXLzb3HbVwIrdo2AKFrZY/exec'
+              const form = document.forms['google-sheet']
+            
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => alert("You have successfully submitted. You will now be redirected to Jumia"))
+                  .catch(error => console.error('Error!', error.message))
+                setTimeout(() => {
+                    window.location.replace("https://www.jumia.com.ng/3smart/");
+                }, 3000);
+                  
+              })
+    </script>
 </body>
 <!-- Body ends -->
 </html>
