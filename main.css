@@ -163,6 +163,7 @@ nav{
     .hero .hero-img{
         background-image: url(./assets/Images/homepage-img/hero-img-solar.png);
         width: 50%;
+        background-size: cover;
         
     }
 
@@ -177,6 +178,7 @@ nav{
         height: 500px;
         background-repeat: no-repeat;
         z-index: -1;
+        background-size: cover;
         
     }
 
@@ -351,7 +353,8 @@ nav{
 
     .product-descp{
         width: 500px;
-        padding-left: 100px;
+        /* padding-left: 100px; */
+        margin: auto;
     }
 
     .product-descp .pheader{
@@ -684,6 +687,7 @@ footer{
     max-width: 83vw;
     margin: auto;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* border: 1px solid #FF8019; */
     /* justify-content: space-around; */
@@ -717,6 +721,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: #333333;
     
 }
 
